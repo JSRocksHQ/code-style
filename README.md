@@ -40,16 +40,16 @@ Property names only need to be quoted if they are reserved words or contain spec
 ```js
 // Bad
 var map = { ready: 9,
-    when: 4, "you are": 15 };
+    when: 4, 'you are': 15 };
 
 // Good
-var map = { ready: 9, when: 4, "you are": 15 };
+var map = { ready: 9, when: 4, 'you are': 15 };
 
 // Good as well
 var map = {
     ready: 9,
     when: 4,
-    "you are": 15
+    'you are': 15
 };
 ```
 
@@ -100,12 +100,12 @@ When a statement is too long to fit on one line, line breaks must occur after an
 
 ```js
 // Bad
-html = "<p>The sum of " + a + " and " + b + " plus " + c
-    + " is " + (a + b + c);
+html = '<p>The sum of ' + a + ' and ' + b + ' plus ' + c
+    + ' is ' + (a + b + c);
 
 // Good
-html = "<p>The sum of " + a + " and " + b + " plus " + c +
-    " is " + (a + b + c);
+html = '<p>The sum of ' + a + ' and ' + b + ' plus ' + c +
+    ' is ' + (a + b + c);
 ```
 
 Lines should be broken into logical groups if it improves readability, such as splitting each expression of a ternary operator onto its own line even if both will fit on a single line.
@@ -182,7 +182,7 @@ Multi-line comments - also named block level comments - are only used for file a
 
 ```js
 // We need an explicit "bar", because later in the code foo is checked.
-var foo = "bar";
+var foo = 'bar';
 
 // Even long comments that span
 // multiple lines use the single
